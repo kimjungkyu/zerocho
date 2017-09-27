@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>폼,인풋,버튼태그</title>
+  <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <form action="/api/join" method="post">
+  <label>아이디<input class="form-control" type="text" placeholder="아이디 입력" id="userid" name="userid" /></label><br />
+  <label>비밀번호<input class="form-control" type="password" id="password" name="password" /></label><br />
+  <label>이메일<input class="form-control" type="email" id="email" name="email" /></label><br />
+  <label>성별
+    <input type="radio" name="gender" value="m" />남
+    <input type="radio" name="gender" value="f" />여
+  </label><br />
+  <label>구독<input type="checkbox" name="subs" /><br />
+      </label>
+  <label>지역
+    <select name="area">
+      <option value="seoul">서울</option>
+      <option value="gyeonggi">경기</option>
+      <option value="jeolla">전라</option>
+      <option value="gyeongsang">경상</option>
+    </select>
+  </label><br/>
+  <label>하고싶은 말<textarea placeholder="입력하세요" name="textarea"></textarea><br />
+  </label>
+  <button type="submit" class="btn btn-info">제출</button>
+  <button type="reset">취소</button>
+</form>
+  </body>
+</html>
